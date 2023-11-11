@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="query_readout">
+      <h1>Query</h1>
+      <div>
+        <table>
+          <tr>
+            <th> # </th>
+            <th> Label </th>
+            <th> Pfams </th>
+            <th> Symbol </th>
+          </tr>
+          {% for key,label in query.labels.items() %}
+          <tr>
+            <td>{{ key }}</td>
+            <td>{{ label }}</td>
+            <td>{{ query.pfams[key]}}</td>
+            <td>
+              <svg height="20" width="200" viewBox="0 0 100 100">
+                {% set length_px = query.lengths[key]/10 %}
+                {% set color = query.colors[key] %}
+                <polygon style="fill:{{ color }};stroke:purple;stroke-width:5;"
+                         points="0,0
+                                {{ length_px }},0
+                                {{ length_px + 25 }},50
+                                {{ length_px }},100
+                                0,100" />
+              </svg>
+            </td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+
+    <div class="main_report">
+      <h1>Genotypes</h1>
+      <table>
+        <tr>
+          <th> Genotype Number </th>
+          <th> Occurences </th>
+          <th> Genotype </th>
+        </tr>
+        {% for key,genotype in genotypes.items() %}
+          <tr>
+            <td> {{ key }} </td>
+            <td> {{ genotype.count }} </td>
+            <td>
+            {#  {% for item in genotype.string_hash %}
+              {% if item|string != 'G' and item|string != '0'%}
+                {% set length_px = query.lengths[item|int|abs]/10 %}
+                {% set color = query.colors[item|int|abs] %}
+                <svg height="20" width="{{ length_px/4 + 10 }}" viewBox="0 0 100 100"
+                preserveAspectRatio="xMinYMid meet">
+                  <polygon style="fill:{{ color }};stroke:purple;stroke-width:5;"
+                           points="0,0
+                                  {{ length_px }},0
+                                  {{ length_px + 25 }},50
+                                  {{ length_px }},100
+                                  0,100" />
+                </svg>
+              {% endif %}
+              {% if item|string == 'G' %}
+                <svg height="20" width="5" viewBox="0 0 10 20"
+                preserveAspectRatio="xMinYMid meet">
+                  <polygon style="fill:grey;"
+                        points="0,10 0,11 10,11 10,10"/>
+                </svg>
+              {% endif %}
+              {% if item|string == '0' %}
+                X
+              {% endif %}
+            {% endfor %} #}
+            {% set c = namespace(cursor=0) %}
+              <svg height="30" width="500">
+                {% for item in genotype.string_hash %}
+                  {% if item|string == 'G' %}
+                    <svg x="{{ c.cursor }}" y="10" width="10" height="20" viewBox="0 0 10 20">
+                      <polygon style="fill:grey;"
+                              points="0,10 0,11 10,11 10,10" />
+                    </svg>
+                    {% set c.cursor = c.cursor + 10 %}
+                  {% endif %}
+
+                  {% if item == '0' %}
+                    <svg x="{{ c.cursor }}" y="10" width="10" height="20" viewBox="0 0 10 20">
+                      <polygon style="fill:red;"
+                              points="0,5 0,15 10,15 10,5" />
+                    </svg>
+                    {% set c.cursor = c.cursor + 10 %}
+                  {% endif %}
+
+                  {% if item != '0' and item|string != 'G' %}
+                    {% set length_px = query.lengths[item|int|abs]/10 %}
+                    {% set color = query.colors[item|int|abs] %}
+                    {% set flip = (item|int)/(item|int|abs) %}
+                    <svg x="{{ c.cursor }}"
+                         y="10"
+                         height="20"
+                         width="{{ (length_px + 25)/4.7 }}"
+                         viewBox="0 0 {{ length_px + 25 }} 100"
+                         preserveAspectRatio="xMinYMid meet">
+                      <polygon style="fill:{{ color }};stroke:purple;stroke-width:5;"
+                               points="0,0
+                                      {{ length_px }},0
+                                      {{ length_px + 25 }},50
+                                      {{ length_px }},100
+                                      0,100"
+                                {% if flip == -1 %}
+                               transform="scale(-1 1),
+                                          translate(-{{ length_px + 25}} 0)"
+                                {% endif %}/>
+                    </svg>
+                    {% set c.cursor = c.cursor + (length_px + 25)/4.7 %}
+                  {% endif %}
+                {% endfor %}
+              </svg>
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </body>
+</html>

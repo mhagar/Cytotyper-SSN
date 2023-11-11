@@ -1,0 +1,886 @@
+<html lang="en">
+  <head>
+<!-- -------------------START CSS ---------------- -->
+  <style>
+  body{
+    font-family:sans-serif, arial;
+    font-size: 5px;
+  }
+  table{
+    display:inline-block;
+    vertical-align: top;
+  }
+  td{
+    padding-left: 10
+  }
+  .protein{
+    height: 5px;
+    padding-top: 20px;
+    display:inline-block;
+  }
+
+  /* #A{
+    background-color: #555;
+  }
+
+  #B{
+    background-color: #FF0000;
+  }
+
+  #C{
+    background-color: #FF8492;
+  }
+
+  #D{
+    background-color: #FFFF90;
+  } */
+
+  </style>
+<!-- -------------- END CSS --------------------- -->
+  </head>
+
+  <body>
+  <table>
+    <tr>
+      <th>Num</th>
+      <th>Enzyme</th>
+      <th>PFAM</th>
+      <th>Color</th>
+    </tr>
+
+      <tr>
+        <td>0</td>
+        <td>Haem_oxygenas_2</td>
+        <td>PF14518</td>
+        <td><div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div></td>
+      </tr>
+
+
+      <tr>
+        <td>1</td>
+        <td>PrmA</td>
+        <td>PF06325</td>
+        <td><div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div></td>
+      </tr>
+
+
+      <tr>
+        <td>2</td>
+        <td>Reiske</td>
+        <td>PF00355</td>
+        <td><div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div></td>
+      </tr>
+
+
+      <tr>
+        <td>3</td>
+        <td>Abhydrolase_3</td>
+        <td>PF07859</td>
+        <td><div class="protein" style="background-color:#09cb95; width:52.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #09cb95"></div></td>
+      </tr>
+
+
+      <tr>
+        <td>4</td>
+        <td>MFS_1</td>
+        <td>PF07690</td>
+        <td><div class="protein" style="background-color:#65b0bf; width:81.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #65b0bf"></div></td>
+      </tr>
+
+
+      <tr>
+        <td>5</td>
+        <td>ATP_grasp</td>
+        <td>PF13535</td>
+        <td><div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div></td>
+      </tr>
+
+
+  </table>
+  <table>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+      <th>BGC</th>
+    </tr>
+
+
+    <tr>
+      <td>0</td>
+      <td>61</td>
+      <td>
+        <div class="protein" style="background-color:#65b0bf; width:81.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #65b0bf"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>28</td>
+      <td>
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#65b0bf; width:81.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #65b0bf"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>110</td>
+      <td>
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td>9</td>
+      <td>
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td>20</td>
+      <td>
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>9</td>
+      <td>3</td>
+      <td>
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#65b0bf; width:81.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #65b0bf"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>16</td>
+      <td>
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+        <div class="protein" style="background-color:#65b0bf; width:81.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #65b0bf"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>12</td>
+      <td>4</td>
+      <td>
+        <div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td>31</td>
+      <td>
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>15</td>
+      <td>4</td>
+      <td>
+        <div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>18</td>
+      <td>10</td>
+      <td>
+        <div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#09cb95; width:52.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #09cb95"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+        <div class="protein" style="background-color:#65b0bf; width:81.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #65b0bf"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>20</td>
+      <td>7</td>
+      <td>
+        <div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>21</td>
+      <td>5</td>
+      <td>
+        <div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+        <div class="protein" style="background-color:#65b0bf; width:81.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #65b0bf"></div>..
+
+        <div class="protein" style="background-color:#09cb95; width:52.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #09cb95"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>22</td>
+      <td>4</td>
+      <td>
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>24</td>
+      <td>3</td>
+      <td>
+        <div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+        <div class="protein" style="background-color:#65b0bf; width:81.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #65b0bf"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>25</td>
+      <td>5</td>
+      <td>
+        <div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>26</td>
+      <td>3</td>
+      <td>
+        <div class="protein" style="background-color:#65b0bf; width:81.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #65b0bf"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>28</td>
+      <td>4</td>
+      <td>
+        <div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#09cb95; width:52.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #09cb95"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>34</td>
+      <td>3</td>
+      <td>
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+        <div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div>..
+
+        <div class="protein" style="background-color:#09cb95; width:52.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #09cb95"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>52</td>
+      <td>14</td>
+      <td>
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+        <div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div>..
+
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+        <div class="protein" style="background-color:#65b0bf; width:81.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #65b0bf"></div>..
+
+        <div class="protein" style="background-color:#b87333; width:73.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #b87333"></div>..
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>55</td>
+      <td>3</td>
+      <td>
+        <div class="protein" style="background-color:#ff0000; width:61.8px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #ff0000"></div>..
+
+        <div class="protein" style="background-color:#c4717a; width:25.6px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #c4717a"></div>..
+
+        <div class="protein" style="background-color:#e3256b; width:57.2px"></div><div class="protein" style="background-color:transparent;
+                                               padding:0px;
+                                                 width:0;
+                                                height:5;
+                                                border-top: 10px solid transparent;
+                                                border-bottom:10px solid transparent;
+                                                border-left: 10px solid #e3256b"></div>..
+
+      </td>
+    </tr>
+
+
+    <!-- <tr>
+      <td>0</td>
+      <td>
+        <div class="protein" id="A"></div>
+        <div class="protein" id="B"></div>
+        <div class="protein" id="C"></div>
+        <div class="protein" id="D"></div>
+      </td> -->
+  </table>
+  </body>
+</html>
